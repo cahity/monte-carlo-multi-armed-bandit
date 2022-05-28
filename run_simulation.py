@@ -1,5 +1,4 @@
 import numpy as np
-
 from tqdm import tqdm
 
 class GaussianDistribution:
@@ -99,7 +98,7 @@ def epsilon_greedy(monte_carlo_iter, schools, epsilon):
     # Epsilon greedy
     print()
     bar = tqdm(
-        range(monte_carlo_iter), "EPSILON GREEDY {epsilon}", total=monte_carlo_iter, leave=True
+        range(monte_carlo_iter), f"EPSILON GREEDY({epsilon})", total=monte_carlo_iter, leave=True
     )
 
     # Use distribution means until first exploration
